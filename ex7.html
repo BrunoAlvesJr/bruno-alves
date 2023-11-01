@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var op = (prompt("Escolha uma opção \n1- Horas\n2- Minutos\n3- Segundos"))
+        var num1 = Number (prompt("Digite um número"))
+        var horas
+        var minutos
+        var segundos 
+        
+
+        switch (op){
+            case "1":
+            horas = num1*1 
+            minutos = num1*60
+            segundos = num1*3600
+            break
+
+            case "2":
+            minutos = num1*1
+            segundos = num1*60
+            horas = num1/60 
+            break
+
+            case"3":
+            horas = num1/3600
+            minutos = num1/60
+            segundos = num1*1
+            break
+
+        } alert ('Valor em horas: ' + horas + '\n Valor em minutos: ' + minutos + '\n Valor em segundos: ' + segundos)
+
+    </script>
+</body>
+</html>

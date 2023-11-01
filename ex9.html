@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var peso = parseFloat (prompt("Digite seu peso"))
+        var altura = parseFloat (prompt("Digite sua altura"))
+        var imc =  peso/(altura*altura)
+
+       /*if (imc < 18.5){
+        alert("abaixo")
+       } else if (imc >= 18.5 && imc <= 24.9 ){
+        alert("recomendado")
+       } else if (imc >= 25.0 && imc <= 29.9){
+        alert ("acima")
+       } else if (imc > 30.0){
+        alert ("obesidade")
+       } */
+
+       switch (true){
+        case imc < 18.5:
+        alert (imc.toFixed(2)  + " Abaixo")
+        break 
+
+        case imc >= 18.5 && imc <= 24.9:
+        alert (imc.toFixed(2) + " Recomendado")
+        break
+
+        case imc >= 25.0 && imc <= 29.9:
+        alert (imc.toFixed(2) + " Acima")
+        break
+
+        case imc > 30.0:
+        alert(imc.toFixed(2) + " Obesidade")
+        break 
+       }
+
+    </script>
+</body>
+</html>

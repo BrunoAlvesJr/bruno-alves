@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         
+         var op = (prompt('Escolha uma opção \n1- Real: \n2- Dólar: \n3- Euros:'))
+         var num1 = parseFloat (prompt('Digite um valor: '))
+         var real 
+         var dolar 
+         var euros 
+          
+         switch (op){
+            case'1':
+            real = num1*1.00
+            dolar = num1/4.99
+            euros = num1/5.30
+            break
+
+            case'2':
+            real = num1*4.99
+            dolar = num1*1.00
+            euros = num1*0.95
+            break
+
+            case'3':
+            real = num1*5.30
+            dolar = num1*1.06
+            euros = num1*1.00
+             
+            break 
+
+         }alert('Valor em Real: ' + real.toFixed(2) + '\n Valor em Dólar: ' + dolar.toFixed(2) + '\n Valor em Euros: ' + euros.toFixed(2))
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var usuario = prompt("Crie um Usuário")
+      var senha = prompt("Crie a senha ")
+    
+        
+        alert ("Faça o check-in")
+        var usuario1 = prompt("Digite seu nome de usuario")
+        var senha1 = prompt("Digite sua senha")
+
+        if (usuario == usuario1 &&  senha == senha1 ) {
+        alert ( "check-in efetuado com sucesso! Seja bem vindo, " + usuario )
+        } else { 
+            alert (" login ou senha incorreto")
+        }
+
+        var servico = (prompt("Escolha uma opção: \n1- Cardápio \n2- Serviços de quarto \n3- Estacionamento"))
+        
+        switch (servico){
+            case'1':
+            alert ("\n1- Pão com ovo \n2- arroz com feijão \n3- Macarrão ")
+            alert ("Pedido anotado")
+            break
+            
+            case'2': 
+            alert ("\n1- Internet \n2- Limpeza do quarto \n3- Reposição do frigobar")
+            alert ("Pedido anotado")
+            break
+
+            case'3':
+            alert ("\n1- Retirar o carro para sair \n2- Guardar o carro no estacionamento")
+            alert ("Pedido anotado")
+            break
+        }
+
+    </script>
+</body>
+</html>
